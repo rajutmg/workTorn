@@ -1,0 +1,207 @@
+
+.footer {
+    padding: 100px 0px 0px;
+    background-color: #030a16;
+    @include  responsive(phone){
+        padding: 30px 0px 0px; 
+    }
+    }
+    
+    .footer .widget1 p {
+    color: rgba(255, 255, 255, .6);
+    margin-top: 10px;
+    }
+    
+    .footer .socialLinks {
+    margin-top: 28px;
+    }
+    .widget1{
+        img{
+    margin-left: -25px;
+    @include responsive(phone){
+        height: 60px;
+    }
+        }
+    }
+    .socialLinks ul li {
+    display: inline-block;
+    }
+    
+    
+    .socialLinks ul li a i {
+    display: block;
+    margin: 0 2px;
+    width: 40px;
+    height: 40px;
+    background: #fafafa;
+    border-radius: 50%;
+    text-align: center;
+    margin-right: 5px;
+    line-height: 40px;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    }
+    
+    .socialLinks ul li a .fa-facebook-f {
+    color: #4267b2;
+    }
+    
+    .socialLinks ul li a .fa-twitter {
+    color: #1da1f2;
+    }
+    
+    .socialLinks ul li a .fa-google-plus-g {
+    color: #dd5044;
+    }
+    
+    .socialLinks ul li a .fa-linkedin-in {
+    color: #0177b5;
+    }
+    
+    
+    .socialLinks ul li a:hover i {
+    color: #fff;
+    }
+    
+    .socialLinks ul li a:hover .fa-facebook-f {
+    background: #4267b2;
+    }
+    
+    .socialLinks ul li a:hover .fa-twitter {
+    background: #1da1f2;
+    }
+    
+    .socialLinks ul li a:hover .fa-google-plus-g {
+    background: #dd5044;
+    }
+    
+    .socialLinks ul li a:hover .fa-linkedin-in {
+    background: #0177b5;
+    }
+    footer .logo {
+    max-width: 200px;
+    }
+    
+    
+    .footer{
+        color: rgba(255, 255, 255, 0.6);
+        ul{
+         padding-left: 0;
+         li{
+             list-style: none;
+             line-height: 2;
+         }
+        }
+    }
+    
+    .footer .widget2{
+            span{
+                color: $secondary-color;
+            }
+    }
+    
+    .footer .widget3 ul li a,
+    .footer .widget4 ul li a {
+        font-size: 0.95em;
+    color: rgba(255, 255, 255, .6);;
+    text-transform: capitalize;
+    display: block;
+    }
+    
+    .footer .widget3 ul li a:hover,
+    .footer .widget4 ul li a:hover,
+    .footer .widget2 a:hover p {
+    color: $secondary-color;
+    }
+    
+    .footer h5 {
+        margin-bottom: 10px;
+        font-weight: 400;
+        color: #fff;
+        font-size: 1.15em;
+        line-height: 32px;
+    }
+    
+    .copyRightArea {
+    margin-top: 83px;
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+    padding: 25px 0px 28px;
+    }
+    
+    .copyRightArea p {
+    color: rgba(255, 255, 255, 0.6);
+    }
+    #foot_btm{
+        padding: 20px 0;
+        padding-bottom: 0;
+        @include responsive(phone){
+            padding-bottom: 20px;
+    text-align: center;
+        }
+        span{
+            color: $secondary-color;
+        }
+       .float-right a {
+            padding: 0 5px;
+            &:hover{
+                color: $secondary-color;
+            }
+        }
+    }
+    :focus {
+        outline: none;
+    }
+    
+
+
+.widget1{ 
+    padding-right: 30px;
+}
+.linksDivider{
+    border-left: 1px solid #9a9d95;
+    padding-left: 40px;
+    @include responsive(phone){
+        padding-left: 15px;
+        border-left: 0 solid #9a9d95;
+    }
+}
+#footJoin{
+    background: #0e2a5a;
+    padding: 25px 0;
+    margin-top: 60px;
+    @include responsive(phone){
+        margin-top: 20px;
+        text-align: center;
+    }
+    .viewBtn {
+        background: darken($secondary-color, 7%);
+        &:hover{
+            background: darken($secondary-color, 15%);
+        }
+        @include responsive(phone){
+            margin-top: 20px;
+        }
+    }
+    .joinText{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        text-align: center;
+        a{
+            color: $secondary-color;
+            &:hover{
+                color: #fff;
+            }
+        }
+        p{
+            margin-bottom: 0;
+            font-size: 1.1em;
+            a{
+                font-size: 1.3em;
+                font-weight: 700;
+            }
+        }
+    }
+}

@@ -1,0 +1,578 @@
+<!DOCTYPE html>
+<html class="support-no-js">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" href="img/logo.png" />
+    <title>New Job site</title>
+    <!-- css_link -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/main.css">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"
+        type="text/css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+        integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+        <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css"> -->
+        <link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.0.7/css/swiper.min.css'>
+        <script src='https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.0.7/js/swiper.min.js'></script>
+</head>
+
+<body>
+    <header>
+        <div id="headerWrap">
+            <section id="navWrap">
+                <nav class="navbar navbar-expand-lg navbar-light bg-light container" data-toggle="affix">
+                    <a class="navbar-brand" href="index.html">
+                         <img src="img/logo.png" class="img-fluid logoWhite"
+                            alt="logo">
+                            <img src="img/logo.png" class="img-fluid logoBlack"
+                            alt="logo">
+                    </a>
+                    <button class="navbar-toggler second-button" type="button" data-toggle="collapse"
+                        data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <div class="animated-icon2"><span></span><span></span><span></span><span></span>
+                        </div>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav ml-auto">
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Main</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="detail.html">How it works</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="detail.html">Browse jobs</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="contact.html">View Freelancers</a>
+                            </li>
+                            <li class="nav-item dropdown profileHolder">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                 <div class="profileInner">
+                                     <div class="profileImage"><img src="./img/9.jpg" class="img-fluid" alt="image"></div> 
+                                     <div class="profileInfo">
+                                        <h3>Raju Tamang</h3>
+                                       <p>Web Designer</p>
+                                     </div>
+                                 </div>
+                                </a>
+                                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                  <a class="dropdown-item" href="#">My Profile</a>
+                                  <a class="dropdown-item" href="#">Messages</a>
+                                  <a class="dropdown-item" href="#">Invoices</a>
+                                </div>
+                              </li>
+                        </ul>
+                    </div>
+                </nav>
+            </section>
+        </div>
+    </header>
+    <main>
+        <section id="mainBanner" style="    background-image: url(./img/bannerImg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-5 holderCov">
+                        <div class="imageHolder">
+                            <img src="./img/img1.png" class="img-fluid" alt="image">
+                            <img src="./img/img2.png" class="img-fluid" alt="image">
+                            <img src="./img/img3.png" class="img-fluid" alt="image">
+                        </div>
+                    </div>
+                    <div class="col-sm-7 bannerContent">
+                        <h1> <span>Hire expert freelancers</span> <br>
+                           for any job, Online</h1>
+                           <h4>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ratione repellendus sequi dicta quasi soluta obcaecati!</h4>
+                           <form class="form-inline">
+                                <input type="text" class="form-control searchingFor" placeholder="I'm Looking for">
+                                <div class="selectOne">
+                                    <select class="form-control">
+                                        <option value="">Freelancers</option>
+                                        <option value="1" selected="selected">Jobs</option>
+                                        <option value="2">Companies</option>
+                                      </select>
+                                </div>
+                              <button type="submit" class="btn btn-primary"><i class="fas fa-search"></i></button>
+                          </form>
+                          <div class="seeFor">
+                              <div class="playIcon">
+                                  <a href="#">
+                                      <div class="playCover">
+                                          <div class="playBg">
+                                              <i class="fas fa-play"></i>
+                                          </div>
+                                      </div>
+                                  </a>
+                              </div>
+                              <div class="playText">
+                                  <h4>
+                                      See For Yourself!
+                                  </h4>
+                                  <p>How it works & experience the ultimate joy.</p>
+                              </div>
+                          </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="catogeriesWrap" class="secGap">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-12 pageTitle titleCenter">
+                        <h2>Explore Categories
+                        </h2>
+                        <h4>Professional by categories
+                        </h4>
+                    </div>  
+                    <div class="col-sm-3">
+                        <a href="#">
+                            <div class="box">
+                                <div class="icon">
+                                    <div class="iconImageWrap">
+                                        <img src="./img/c1.png" class="img-fluid" alt="icon">
+                                    </div>
+                                  <h3>Mobiles</h3>
+                                </div>
+                                <div class="content">
+                                  <p>Le Lorem Ipsum est simplement du faux texte employé dans la composition et la mise en page avant impression.</p>
+                                  <div class="explore">
+                                    Explore <i class="fas fa-arrow-right"></i>
+                                 </div>
+                                </div>
+                              </div>
+                        </a>
+                    </div>
+                    <div class="col-sm-3">
+                        <a href="#">
+                            <div class="box">
+                                <div class="icon">
+                                    <div class="iconImageWrap">
+                                        <img src="./img/c8.png" class="img-fluid" alt="icon">
+                                    </div>
+                                  <h3>Digital Marketing</h3>
+                                </div>
+                                <div class="content">
+                                  <p>Le Lorem Ipsum est simplement du faux texte employé dans la composition et la mise en page avant impression.</p>
+                                  <div class="explore">
+                                    Explore <i class="fas fa-arrow-right"></i>
+                                 </div>
+                                </div>
+                              </div>
+                        </a>
+                    </div>
+                    <div class="col-sm-3">
+                        <a href="#">
+                            <div class="box">
+                                <div class="icon">
+                                    <div class="iconImageWrap">
+                                        <img src="./img/c2.png" class="img-fluid" alt="icon">
+                                    </div>
+                                  <h3>Writing & Translation</h3>
+                                </div>
+                                <div class="content">
+                                  <p>Le Lorem Ipsum est simplement du faux texte employé dans la composition et la mise en page avant impression.</p>
+                                  <div class="explore">
+                                    Explore <i class="fas fa-arrow-right"></i>
+                                 </div>
+                                </div>
+                              </div>
+                        </a>
+                    </div>
+                    <div class="col-sm-3">
+                        <a href="#">
+                            <div class="box">
+                                <div class="icon">
+                                    <div class="iconImageWrap">
+                                        <img src="./img/c3.png" class="img-fluid" alt="icon">
+                                    </div>
+                                  <h3>Video & Animation</h3>
+                                </div>
+                                <div class="content">
+                                  <p>Le Lorem Ipsum est simplement du faux texte employé dans la composition et la mise en page avant impression.</p>
+                                  <div class="explore">
+                                    Explore <i class="fas fa-arrow-right"></i>
+                                 </div>
+                                </div>
+                              </div>
+                        </a>
+                    </div>
+                    <div class="col-sm-3">
+                        <a href="#">
+                            <div class="box">
+                                <div class="icon">
+                                    <div class="iconImageWrap">
+                                        <img src="./img/c4.png" class="img-fluid" alt="icon">
+                                    </div>
+                                  <h3>Music & Audio</h3>
+                                </div>
+                                <div class="content">
+                                  <p>Le Lorem Ipsum est simplement du faux texte employé dans la composition et la mise en page avant impression.</p>
+                                  <div class="explore">
+                                    Explore <i class="fas fa-arrow-right"></i>
+                                 </div>
+                                </div>
+                              </div>
+                        </a>
+                    </div>
+                    <div class="col-sm-3">
+                        <a href="#">
+                            <div class="box">
+                                <div class="icon">
+                                    <div class="iconImageWrap">
+                                        <img src="./img/c5.png" class="img-fluid" alt="icon">
+                                    </div>
+                                  <h3>Programming & Tech</h3>
+                                </div>
+                                <div class="content">
+                                  <p>Le Lorem Ipsum est simplement du faux texte employé dans la composition et la mise en page avant impression.</p>
+                                  <div class="explore">
+                                    Explore <i class="fas fa-arrow-right"></i>
+                                 </div>
+                                </div>
+                              </div>
+                        </a>
+                    </div>
+                    <div class="col-sm-3">
+                        <a href="#">
+                            <div class="box">
+                                <div class="icon">
+                                    <div class="iconImageWrap">
+                                        <img src="./img/c6.png" class="img-fluid" alt="icon">
+                                    </div>
+                                  <h3>Business</h3>
+                                </div>
+                                <div class="content">
+                                  <p>Le Lorem Ipsum est simplement du faux texte employé dans la composition et la mise en page avant impression.</p>
+                                  <div class="explore">
+                                    Explore <i class="fas fa-arrow-right"></i>
+                                 </div>
+                                </div>
+                              </div>
+                        </a>
+                    </div>
+                    <div class="col-sm-3">
+                        <a href="#">
+                            <div class="box">
+                                <div class="icon">
+                                    <div class="iconImageWrap">
+                                        <img src="./img/c2.png" class="img-fluid" alt="icon">
+                                    </div>
+                                  <h3>Fun & Lifestyle</h3>
+                                </div>
+                                <div class="content">
+                                  <p>Le Lorem Ipsum est simplement du faux texte employé dans la composition et la mise en page avant impression.</p>
+                                  <div class="explore">
+                                    Explore <i class="fas fa-arrow-right"></i>
+                                 </div>
+                                </div>
+                              </div>
+                        </a>
+                    </div>
+                    <div class="col-sm-12" align="center">
+                        <a href="#" class="btn viewBtn"> view all</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="starterWrap" style="    background-image: url(./img/9.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;" >
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-6 starterLeft">
+                        <div class="starterInner">
+                            <h2>Start as a company
+                            </h2>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maiores dicta, laudantium repudiandae dolores reprehenderit fuga quaerat autem nemo eos sequi alias ducimus veritatis tenetur, incidunt nobis repellendus ipsum enim accusantium.</p> 
+                        <a href="#" class="btn viewBtn"> Join now</a>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 starterRight">
+                        <div class="starterInner">
+                            <h2>Start As Freelancer
+                            </h2>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Atque iusto quaerat eveniet, error quidem dignissimos quo excepturi labore odio dolores, cupiditate perspiciatis sequi tenetur aspernatur laboriosam. Reiciendis deleniti earum nam!</p>
+                        <a href="#" class="btn viewBtn"> Join now</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="limitlessWrap" class="secGap">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-6">
+                        <img src="./img/mobileImg.png" class="img-fluid" alt="image">
+                    </div>
+                    <div class="col-sm-6 limitlessCover">
+                        <div class="limitless">
+                            <div class="pageTitle">
+                                <h2>Limitless Experience
+                                </h2>
+                                <h4>Roam Around With Your Business
+                                </h4>
+                            </div>  
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium enim corrupti impedit qui ex? Voluptatibus est labore odio ducimus quibusdam. Velit, qui id! Debitis nisi earum tempora optio soluta rem?</p>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum eveniet eos, ipsa repellendus assumenda reprehenderit tempore ducimus omnis, quam repellat consequatur quae est itaque, quis quasi id ipsam accusamus deleniti!</p>
+                            <div class="contentImg">
+                                <img src="./img/img01.png" class="img-fluid" alt="image">
+                                <img src="./img/img02.png" class="img-fluid" alt="image">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="moreLinks">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-3">
+                        <h3>By Skills</h3>
+                        <ul>
+                            <li><a href="#">Software Engineer</a></li>
+                            <li><a href="#">Technical Writer</a></li>
+                            <li><a href="#">UI Designer</a></li>
+                            <li><a href="#">UX Designer</a></li>
+                            <li><a href="#">Virtual Assistant</a></li>
+                            <li><a href="#">Web Designer</a></li>
+                            <li><a href="#">Wordpress Developer</a></li>
+                            <li><a href="#">Content Writer</a></li>
+                            <li class="viewAll"><a href="#">+ View All</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-sm-3">
+                        <h3>Skills In US</h3>
+                        <ul>
+                            <li><a href="#">HTML Developers in US</a></li>
+                            <li><a href="#">HTML5 Developers in US</a></li>
+                            <li><a href="#">JavaScript Developers in US</a></li>
+                            <li><a href="#">Microsoft Word Experts in US</a></li>
+                            <li><a href="#">PowerPoint Experts in US</a></li>
+                            <li><a href="#">Social Media Marketers in US</a></li>
+                            <li><a href="#">WordPress Developers in US</a></li>
+                            <li><a href="#">Writers in US</a></li>
+                            <li class="viewAll"><a href="#">+ View All</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-sm-3">
+                        <h3>By Categories</h3>
+                        <ul class="wt-fwidgetcontent">
+                            <li><a href="#">Graphics &amp; Design</a></li>
+                            <li><a href="#">Digital Marketing</a></li>
+                            <li><a href="#">Writing &amp; Translation</a></li>
+                            <li><a href="#">Video &amp; Animation</a></li>
+                            <li><a href="#">Music &amp; Audio</a></li>
+                            <li><a href="#">Programming &amp; Tech</a></li>
+                            <li><a href="#">Business</a></li>
+                            <li><a href="#">Fun &amp; Lifestyle</a></li>
+                            <li class="viewAll"><a href="#">+ View All</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-sm-3">
+                        <h3>By Location</h3>
+                        <ul>
+                            <li><a href="#">Switzerland</a></li>
+                            <li><a href="#">Canada</a></li>
+                            <li><a href="#">Germany</a></li>
+                            <li><a href="#">United Kingdom</a></li>
+                            <li><a href="#">Japan</a></li>
+                            <li><a href="#">Sweden</a></li>
+                            <li><a href="#">Australia</a></li>
+                            <li><a href="#">United States</a></li>
+                            <li class="viewAll"><a href="#">+ View All</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+            <section class="footer">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-6 col-lg-6">
+                            <div class="widget1">
+                                <img src="./img/logo.png" class="img-fluid" alt="logo">
+                                <p>
+                                    In eu libero ligula. Fusce eget metus lorem, ac viverra
+                                    leo. Nullam convallis, arcu vel pellentesque sodales,
+                                    nisi est varius diam, ac ultrices sem ante quis sem.
+                                    Proin ultricies volutpat sapien.
+                                </p>
+                                <div class="socialLinks">
+                                    <ul>
+                                        <li>
+                                            <a href="#">
+                                                <i class="fab fa-facebook-f"></i>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                <i class="fab fa-twitter"></i>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                <i class="fab fa-linkedin-in"></i>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                <i class="fab fa-google-plus-g"></i>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 linksDivider">
+                            <div class="row">
+                                <div class="col-sm-6">
+                                    <div class="widget3">
+                                        <h5>
+                                            Company
+                                        </h5>
+                                        <ul>
+                                            <li>
+                                                <a href="#">
+                                                    About us
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#">
+                                                    How it works
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#">
+                                                    Careers
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#">
+                                                   Terms & Conditions
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#">
+                                                    Trust & Safety
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="col-sm-6">
+                                    <div class="widget4">
+                                        <h5>
+                                            Explore More
+                                        </h5>
+                                        <ul>
+                                            <li>
+                                                <a href="#">
+                                                    Team mates
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#">
+                                                   Freelancers in Canada
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#">
+                                                   Freelancers in Australia
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#">
+                                                Jobs in Usa
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#">
+                                                    Find Jobs
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <section id="footJoin" >
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-sm-9 joinText">
+                         <p>
+                            <a href="#">@sitename</a> Lorem ipsum dolor, sit amet consectetur adipisicing elit .
+                         </p> 
+                            </div>
+                            <div class="col-sm-3">
+                                <a href="#" class="btn viewBtn">Join Now</a>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section id="foot_btm">
+                    <div class="container">
+                      <div class="row">
+                        <div class="col-md-12">
+                          <p class="float-left">
+                            Copyright © 2021 <span>abc.com</span> All rights
+                            reserved.
+                          </p>
+                          <div class="float-right">
+                            <a href="#">News</a>
+                            <a href="#">Terms & Conditions</a>
+                            <a href="#"> Privacy Policy</a>
+                            <a href="#"> Career</a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </section>
+            </section>
+    </footer>
+    <!-- js_link -->
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+    <script src="js/common.js"></script>
+    <script>
+        var swiper = new Swiper('.swiper-container', {
+            slidesPerView: 3,
+            spaceBetween: 30,
+            centeredSlides: true,
+          slidesPerGroup: 1,
+          loop: true,
+  pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+      }
+        });
+      </script>
+          <script>
+            var swiper = new Swiper('.swiper-container1', {
+                slidesPerView: 3,
+            spaceBetween: 10,
+          slidesPerGroup: 1,
+          loop: true,
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+            });
+          </script>
+</body>
+
+</html>
