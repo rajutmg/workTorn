@@ -1,0 +1,753 @@
+<!DOCTYPE html>
+<html class="support-no-js">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" href="img/logo.png" />
+    <title>New Job site</title>
+    <!-- css_link -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/main.css">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"
+        type="text/css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+        integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
+<script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+<script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+</head>
+
+<body>
+    <header>
+        <div id="headerWrap">
+            <section id="navWrap">
+                <nav class="navbar navbar-expand-lg navbar-light bg-light container" data-toggle="affix">
+                    <a class="navbar-brand" href="index.html">
+                         <img src="img/logo.png" class="img-fluid logoWhite"
+                            alt="logo">
+                            <img src="img/logo.png" class="img-fluid logoBlack"
+                            alt="logo">
+                    </a>
+                    <div class="dropdown profileHolderMob">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                         <div class="profileInner">
+                             <div class="profileImage"><img src="./img/9.jpg" class="img-fluid" alt="image"></div> 
+                             <div class="profileInfo">
+                                <h3>Raju Tamang</h3>
+                               <p>Web Designer</p>
+                             </div>
+                         </div>
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                          <a class="dropdown-item" href="#">My Profile</a>
+                          <a class="dropdown-item" href="#">Messages</a>
+                          <a class="dropdown-item" href="#">Invoices</a>
+                        </div>
+                    </div>
+                    <button class="navbar-toggler second-button" type="button" data-toggle="collapse"
+                        data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <div class="animated-icon2"><span></span><span></span><span></span><span></span>
+                        </div>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav ml-auto">
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Main</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="detail.html">How it works</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="detail.html">Browse jobs</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="contact.html">View Freelancers</a>
+                            </li>
+                            <li class="nav-item dropdown profileHolder">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                 <div class="profileInner">
+                                     <div class="profileImage"><img src="./img/9.jpg" class="img-fluid" alt="image"></div> 
+                                     <div class="profileInfo">
+                                        <h3>Raju Tamang</h3>
+                                       <p>Web Designer</p>
+                                     </div>
+                                 </div>
+                                </a>
+                                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                  <a class="dropdown-item" href="#">My Profile</a>
+                                  <a class="dropdown-item" href="#">Messages</a>
+                                  <a class="dropdown-item" href="#">Invoices</a>
+                                </div>
+                              </li>
+                        </ul>
+                    </div>
+                </nav>
+            </section>
+        </div>
+    </header>
+    <main>
+        <section id="pageBanner" style="    background-image: url(./img/pageBanner.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;" >
+        <div class="pageBannerInner">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-12">
+                        <h2>Search Result</h2>
+                                        <nav aria-label="breadcrumb">
+                                            <ol class="breadcrumb">
+                                                <li class="breadcrumb-item"><a href="#">Home</a></li>
+                                                <li class="breadcrumb-item active" aria-current="page">Job
+                                                </li>
+                                            </ol>
+                                        </nav>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </section>
+        <section id="listingWrap" class="secGap">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-4 leftFilter">
+                        <div class="filterBox">
+                            <h3>Categories</h3>
+                            <hr>
+                            <div class="filterSearch">
+                                <div class="input-group">
+                                    <input type="text" class="form-control" placeholder="Search this blog">
+                                    <div class="input-group-append">
+                                      <button class="btn btn-secondary" type="button">
+                                        <i class="fa fa-search"></i>
+                                      </button>
+                                    </div>
+                                  </div>
+                            </div>
+                              <div class="checkBoxHolder myscroll">
+                                  <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" id="Checkbox1" value="option1">
+                                    <label class="form-check-label" for="Checkbox1"> <span>Wordpress</span></label>
+                                  </div>
+                                  <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" id="Checkbox2" value="option2">
+                                    <label class="form-check-label" for="Checkbox2"> <span>Graphic Design</span></label>
+                                  </div>
+                                  <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" id="Checkbox3" value="option2">
+                                    <label class="form-check-label" for="Checkbox3"> <span>Website Design</span></label>
+                                  </div>
+                                  <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" id="Checkbox4" value="option2">
+                                    <label class="form-check-label" for="Checkbox4"> <span>Article Writing</span></label>
+                                  </div>
+                                  <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" id="Checkbox5" value="option2">
+                                    <label class="form-check-label" for="Checkbox5"> <span>Database Design</span></label>
+                                  </div>
+                                  <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" id="Checkbox6" value="option2">
+                                    <label class="form-check-label" for="Checkbox6"><span>Backend Development</span></label>
+                                  </div>
+                                  <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" id="Checkbox7" value="option1">
+                                    <label class="form-check-label" for="Checkbox7"><span>Wordpress</span></label>
+                                  </div>
+                                  <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" id="Checkbox8" value="option2">
+                                    <label class="form-check-label" for="Checkbox8"><span>Graphic Design</span></label>
+                                  </div>
+                                  <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" id="Checkbox9" value="option2">
+                                    <label class="form-check-label" for="Checkbox9"><span>Website Design</span></label>
+                                  </div>
+                              </div>
+                        </div>
+                        <div class="filterBox">
+                            <h3>Project Type</h3>
+                            <hr>
+                            <div class="projectType">
+                                <div class="form-check">
+                                  <input class="form-check-input" type="radio" name="project" id="project1" value="option1">
+                                  <label class="form-check-label" for="project1">
+                                    Any Project Type
+                                  </label>
+                                </div>
+                                <div class="form-check">
+                                  <input class="form-check-input" type="radio" name="project" id="project2" value="option2">
+                                  <label class="form-check-label" for="project2">
+                                    Hourly Based Project
+                                  </label>
+                                </div>
+                            </div>
+                            <div class="doubleP">
+                                <div class="priceCover" data-role="page">                              
+                                    <div data-role="main" class="ui-content">
+                                      <form method="post" action="/action_page_post.php">
+                                        <div data-role="rangeslider">
+                                          <input type="range" name="price-min" id="price-min" value="15" min="0" max="150">
+                                          <input type="range" name="price-max" id="price-max" value="120" min="0" max="150">
+                                        </div>
+                                        </form>
+                                    </div>
+                                    <span class="dollor1">$</span>
+                                    <span class="dashDivider">-</span>
+                                    <span class="dollor2">$</span>
+                                  </div> 
+                            </div>
+                            <div class="projectType">
+                                <div class="form-check">
+                                  <input class="form-check-input" type="radio" name="project" id="project3" value="option1">
+                                  <label class="form-check-label" for="project3">
+                                    Fixed Price Project
+                                  </label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="filterBox">
+                            <h3>Location</h3>
+                            <hr>
+                            <div class="filterSearch">
+                                <div class="input-group">
+                                    <input type="text" class="form-control" placeholder="Search location">
+                                    <div class="input-group-append">
+                                      <button class="btn btn-secondary" type="button">
+                                        <i class="fa fa-search"></i>
+                                      </button>
+                                    </div>
+                                  </div>
+                            </div>
+                              <div class="checkBoxHolder myscroll">
+                                  <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" id="country1" value="option1">
+                                    <label class="form-check-label" for="country1"> <span>Canada</span></label>
+                                  </div>
+                                  <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" id="country2" value="option2">
+                                    <label class="form-check-label" for="country2"> <span>England</span></label>
+                                  </div>
+                                  <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" id="country3" value="option2">
+                                    <label class="form-check-label" for="country3"> <span>Australia</span></label>
+                                  </div>
+                                  <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" id="country4" value="option2">
+                                    <label class="form-check-label" for="country4"> <span>United States</span></label>
+                                  </div>
+                                  <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" id="country5" value="option2">
+                                    <label class="form-check-label" for="country5"> <span>United Emirates</span></label>
+                                  </div>
+                                  <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" id="country6" value="option2">
+                                    <label class="form-check-label" for="country6"><span>Germany</span></label>
+                                  </div>
+                              </div>
+                        </div>
+                        <div class="filterBox">
+                            <h3>Skills Required</h3>
+                            <hr>
+                              <div class="checkBoxHolder">
+                                  <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" id="skill1" value="option1">
+                                    <label class="form-check-label" for="skill1"> <span>Pro Independent Freelancers</span></label>
+                                  </div>
+                                  <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" id="skill2" value="option2">
+                                    <label class="form-check-label" for="skill2"> <span>Pro Agency Freelancers</span></label>
+                                  </div>
+                                  <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" id="skill3" value="option2">
+                                    <label class="form-check-label" for="skill3"> <span>Independent Freelancers</span></label>
+                                  </div>
+                                  <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" id="skill4" value="option2">
+                                    <label class="form-check-label" for="skill4"> <span>Agency Freelancers</span></label>
+                                  </div>
+                                  <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" id="skill5" value="option2">
+                                    <label class="form-check-label" for="skill5"> <span>New Rising Talent</span></label>
+                                  </div>
+                              </div>
+                        </div>
+                        <div class="filterBox">
+                            <h3>Project Length</h3>
+                            <hr>
+                              <div class="checkBoxHolder">
+                                  <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" id="project1" value="option1">
+                                    <label class="form-check-label" for="project1"> <span>Any Project Length</span></label>
+                                  </div>
+                                  <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" id="project2" value="option2">
+                                    <label class="form-check-label" for="project2"> <span>Less Than 01 Month</span></label>
+                                  </div>
+                                  <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" id="project3" value="option2">
+                                    <label class="form-check-label" for="project3"> <span>01 To 03 Months</span></label>
+                                  </div>
+                                  <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" id="project4" value="option2">
+                                    <label class="form-check-label" for="project4"> <span>03 To 06 Months</span></label>
+                                  </div>
+                                  <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" id="project5" value="option2">
+                                    <label class="form-check-label" for="project5"> <span>More Than 06 Months</span></label>
+                                  </div>
+                              </div>
+                        </div>
+                        <div class="filterBox">
+                            <h3>Languages</h3>
+                            <hr>
+                            <div class="filterSearch">
+                                <div class="input-group">
+                                    <input type="text" class="form-control" placeholder="Search languages">
+                                    <div class="input-group-append">
+                                      <button class="btn btn-secondary" type="button">
+                                        <i class="fa fa-search"></i>
+                                      </button>
+                                    </div>
+                                  </div>
+                            </div>
+                              <div class="checkBoxHolder myscroll">
+                                  <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" id="langu1" value="option1">
+                                    <label class="form-check-label" for="langu1"> <span>Chinese</span></label>
+                                  </div>
+                                  <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" id="langu2" value="option2">
+                                    <label class="form-check-label" for="langu2"> <span>Spanish</span></label>
+                                  </div>
+                                  <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" id="langu3" value="option2">
+                                    <label class="form-check-label" for="langu3"> <span>English</span></label>
+                                  </div>
+                                  <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" id="langu4" value="option2">
+                                    <label class="form-check-label" for="langu4"> <span>Arabic</span></label>
+                                  </div>
+                                  <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" id="langu5" value="option2">
+                                    <label class="form-check-label" for="langu5"> <span>Russian</span></label>
+                                  </div>
+                                  <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" id="langu6" value="option2">
+                                    <label class="form-check-label" for="langu6"><span>korean</span></label>
+                                  </div>
+                              </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-8 rightFilter">
+                        <div class="topResult">
+                            <p>01 - 48 of 57143 results for <strong>"PHP Developer"</strong></p>
+                        </div>
+                        <div class="topkeyWords">
+                            <div class="clearBtn">
+                                <div class="btn"><i class="fas fa-times"></i> Clear All Filter</div>
+                            </div>
+                            <ul>
+                                <li><a href="#" class="btn">Graphic Design</a> </li>
+                                <li><a href="#" class="btn">Any Hourly Rate</a> </li>
+                                <li><a href="#" class="btn">Any Freelancer Type</a> </li>
+                                <li><a href="#" class="btn">Chinese</a> </li>
+                            </ul>
+                        </div>
+                        <div class="jobLists">
+                            <div class="job">
+                                <div class="row">
+                                    <div class="col-sm-8 leftInfo">
+                                        <div class="leftInfoInner">
+                                            <div class="checkTop">
+                                                <i class="fas fa-check-circle"></i> Light Bulb Association
+                                            </div>
+                                            <h3>I Want Some Customization And Installation</h3>
+                                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore omnis fugit eum nemo eos est id voluptatibus? Beatae numquam iste ut ex reprehenderit iure natus corrupti aliquid veniam iusto! Officia.</p>
+                                            <ul>
+                                                <li><a href="#" class="btn">PHP</a> </li>
+                                    <li><a href="#" class="btn">HTML</a> </li>
+                                    <li><a href="#" class="btn">CSS</a> </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-4 rightInfo">
+                                        <div class="rightInfoCover">
+                                            <ul>
+                                                <li class="money"><i class="fas fa-dollar-sign"></i> Professional</li>
+                                                <li class="flag"><i class="fas fa-flag"></i> England</li>
+                                                <li class="hour"><i class="far fa-file"></i> Type: Per Hour</li>
+                                                <li class="time"><i class="far fa-clock"></i> Duration: 03 Months</li>
+                                                <li class="jobId"><i class="fas fa-tag"></i> Job ID: gy3yV2Vm5u</li>
+                                                <li class="save"><i class="fas fa-heart"></i> Save</li>
+                                            </ul>
+                                            <a href="#" class="btn viewBtn">view job</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="fearuredTag">
+                                    <img src="./img/featured.png" class="img-fluid" alt="image">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="jobLists">
+                            <div class="job">
+                                <div class="row">
+                                    <div class="col-sm-8 leftInfo">
+                                        <div class="leftInfoInner">
+                                            <div class="checkTop">
+                                                <i class="fas fa-check-circle"></i> Light Bulb Association
+                                            </div>
+                                            <h3>I Want Some Customization And Installation</h3>
+                                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore omnis fugit eum nemo eos est id voluptatibus? Beatae numquam iste ut ex reprehenderit iure natus corrupti aliquid veniam iusto! Officia.</p>
+                                            <ul>
+                                                <li><a href="#" class="btn">PHP</a> </li>
+                                    <li><a href="#" class="btn">HTML</a> </li>
+                                    <li><a href="#" class="btn">CSS</a> </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-4 rightInfo">
+                                        <div class="rightInfoCover">
+                                            <ul>
+                                                <li class="money"><i class="fas fa-dollar-sign"></i> Professional</li>
+                                                <li class="flag"><i class="fas fa-flag"></i> England</li>
+                                                <li class="hour"><i class="far fa-file"></i> Type: Per Hour</li>
+                                                <li class="time"><i class="far fa-clock"></i> Duration: 03 Months</li>
+                                                <li class="jobId"><i class="fas fa-tag"></i> Job ID: gy3yV2Vm5u</li>
+                                                <li class="save"><i class="fas fa-heart"></i> Save</li>
+                                            </ul>
+                                            <a href="#" class="btn viewBtn">view job</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="fearuredTag color1">
+                                    <img src="./img/featured.png" class="img-fluid" alt="image">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="jobLists">
+                          <div class="job">
+                              <div class="row">
+                                  <div class="col-sm-8 leftInfo">
+                                      <div class="leftInfoInner">
+                                          <div class="checkTop">
+                                              <i class="fas fa-check-circle"></i> Light Bulb Association
+                                          </div>
+                                          <h3>I Want Some Customization And Installation</h3>
+                                          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore omnis fugit eum nemo eos est id voluptatibus? Beatae numquam iste ut ex reprehenderit iure natus corrupti aliquid veniam iusto! Officia.</p>
+                                          <ul>
+                                              <li><a href="#" class="btn">PHP</a> </li>
+                                  <li><a href="#" class="btn">HTML</a> </li>
+                                  <li><a href="#" class="btn">CSS</a> </li>
+                                          </ul>
+                                      </div>
+                                  </div>
+                                  <div class="col-sm-4 rightInfo">
+                                      <div class="rightInfoCover">
+                                          <ul>
+                                              <li class="money"><i class="fas fa-dollar-sign"></i> Professional</li>
+                                              <li class="flag"><i class="fas fa-flag"></i> England</li>
+                                              <li class="hour"><i class="far fa-file"></i> Type: Per Hour</li>
+                                              <li class="time"><i class="far fa-clock"></i> Duration: 03 Months</li>
+                                              <li class="jobId"><i class="fas fa-tag"></i> Job ID: gy3yV2Vm5u</li>
+                                              <li class="save"><i class="fas fa-heart"></i> Save</li>
+                                          </ul>
+                                          <a href="#" class="btn viewBtn">view job</a>
+                                      </div>
+                                  </div>
+                              </div>
+                              <div class="fearuredTag color1">
+                                  <img src="./img/featured.png" class="img-fluid" alt="image">
+                              </div>
+                          </div>
+                      </div>
+                      <div class="jobLists">
+                        <div class="job">
+                            <div class="row">
+                                <div class="col-sm-8 leftInfo">
+                                    <div class="leftInfoInner">
+                                        <div class="checkTop">
+                                            <i class="fas fa-check-circle"></i> Light Bulb Association
+                                        </div>
+                                        <h3>I Want Some Customization And Installation</h3>
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore omnis fugit eum nemo eos est id voluptatibus? Beatae numquam iste ut ex reprehenderit iure natus corrupti aliquid veniam iusto! Officia.</p>
+                                        <ul>
+                                            <li><a href="#" class="btn">PHP</a> </li>
+                                <li><a href="#" class="btn">HTML</a> </li>
+                                <li><a href="#" class="btn">CSS</a> </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="col-sm-4 rightInfo">
+                                    <div class="rightInfoCover">
+                                        <ul>
+                                            <li class="money"><i class="fas fa-dollar-sign"></i> Professional</li>
+                                            <li class="flag"><i class="fas fa-flag"></i> England</li>
+                                            <li class="hour"><i class="far fa-file"></i> Type: Per Hour</li>
+                                            <li class="time"><i class="far fa-clock"></i> Duration: 03 Months</li>
+                                            <li class="jobId"><i class="fas fa-tag"></i> Job ID: gy3yV2Vm5u</li>
+                                            <li class="save"><i class="fas fa-heart"></i> Save</li>
+                                        </ul>
+                                        <a href="#" class="btn viewBtn">view job</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="fearuredTag color1">
+                                <img src="./img/featured.png" class="img-fluid" alt="image">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="jobLists">
+                      <div class="job">
+                          <div class="row">
+                              <div class="col-sm-8 leftInfo">
+                                  <div class="leftInfoInner">
+                                      <div class="checkTop">
+                                          <i class="fas fa-check-circle"></i> Light Bulb Association
+                                      </div>
+                                      <h3>I Want Some Customization And Installation</h3>
+                                      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore omnis fugit eum nemo eos est id voluptatibus? Beatae numquam iste ut ex reprehenderit iure natus corrupti aliquid veniam iusto! Officia.</p>
+                                      <ul>
+                                          <li><a href="#" class="btn">PHP</a> </li>
+                              <li><a href="#" class="btn">HTML</a> </li>
+                              <li><a href="#" class="btn">CSS</a> </li>
+                                      </ul>
+                                  </div>
+                              </div>
+                              <div class="col-sm-4 rightInfo">
+                                  <div class="rightInfoCover">
+                                      <ul>
+                                          <li class="money"><i class="fas fa-dollar-sign"></i> Professional</li>
+                                          <li class="flag"><i class="fas fa-flag"></i> England</li>
+                                          <li class="hour"><i class="far fa-file"></i> Type: Per Hour</li>
+                                          <li class="time"><i class="far fa-clock"></i> Duration: 03 Months</li>
+                                          <li class="jobId"><i class="fas fa-tag"></i> Job ID: gy3yV2Vm5u</li>
+                                          <li class="save"><i class="fas fa-heart"></i> Save</li>
+                                      </ul>
+                                      <a href="#" class="btn viewBtn">view job</a>
+                                  </div>
+                              </div>
+                          </div>
+                          <div class="fearuredTag color1">
+                              <img src="./img/featured.png" class="img-fluid" alt="image">
+                          </div>
+                      </div>
+                  </div>
+                  <div class="jobLists">
+                    <div class="job">
+                        <div class="row">
+                            <div class="col-sm-8 leftInfo">
+                                <div class="leftInfoInner">
+                                    <div class="checkTop">
+                                        <i class="fas fa-check-circle"></i> Light Bulb Association
+                                    </div>
+                                    <h3>I Want Some Customization And Installation</h3>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore omnis fugit eum nemo eos est id voluptatibus? Beatae numquam iste ut ex reprehenderit iure natus corrupti aliquid veniam iusto! Officia.</p>
+                                    <ul>
+                                        <li><a href="#" class="btn">PHP</a> </li>
+                            <li><a href="#" class="btn">HTML</a> </li>
+                            <li><a href="#" class="btn">CSS</a> </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-sm-4 rightInfo">
+                                <div class="rightInfoCover">
+                                    <ul>
+                                        <li class="money"><i class="fas fa-dollar-sign"></i> Professional</li>
+                                        <li class="flag"><i class="fas fa-flag"></i> England</li>
+                                        <li class="hour"><i class="far fa-file"></i> Type: Per Hour</li>
+                                        <li class="time"><i class="far fa-clock"></i> Duration: 03 Months</li>
+                                        <li class="jobId"><i class="fas fa-tag"></i> Job ID: gy3yV2Vm5u</li>
+                                        <li class="save"><i class="fas fa-heart"></i> Save</li>
+                                    </ul>
+                                    <a href="#" class="btn viewBtn">view job</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="fearuredTag color1">
+                            <img src="./img/featured.png" class="img-fluid" alt="image">
+                        </div>
+                    </div>
+                </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+            <section class="footer">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-6 col-lg-6">
+                            <div class="widget1">
+                                <img src="./img/logo.png" class="img-fluid" alt="logo">
+                                <p>
+                                    In eu libero ligula. Fusce eget metus lorem, ac viverra
+                                    leo. Nullam convallis, arcu vel pellentesque sodales,
+                                    nisi est varius diam, ac ultrices sem ante quis sem.
+                                    Proin ultricies volutpat sapien.
+                                </p>
+                                <div class="socialLinks">
+                                    <ul>
+                                        <li>
+                                            <a href="#">
+                                                <i class="fab fa-facebook-f"></i>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                <i class="fab fa-twitter"></i>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                <i class="fab fa-linkedin-in"></i>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                <i class="fab fa-google-plus-g"></i>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 linksDivider">
+                            <div class="row">
+                                <div class="col-sm-6">
+                                    <div class="widget3">
+                                        <h5>
+                                            Company
+                                        </h5>
+                                        <ul>
+                                            <li>
+                                                <a href="#">
+                                                    About us
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#">
+                                                    How it works
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#">
+                                                    Careers
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#">
+                                                   Terms & Conditions
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#">
+                                                    Trust & Safety
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="col-sm-6">
+                                    <div class="widget4">
+                                        <h5>
+                                            Explore More
+                                        </h5>
+                                        <ul>
+                                            <li>
+                                                <a href="#">
+                                                    Team mates
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#">
+                                                   Freelancers in Canada
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#">
+                                                   Freelancers in Australia
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#">
+                                                Jobs in Usa
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#">
+                                                    Find Jobs
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <section id="footJoin" >
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-sm-9 joinText">
+                         <p>
+                            <a href="#">@sitename</a> Lorem ipsum dolor, sit amet consectetur adipisicing elit .
+                         </p> 
+                            </div>
+                            <div class="col-sm-3">
+                                <a href="#" class="btn viewBtn">Join Now</a>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section id="foot_btm">
+                    <div class="container">
+                      <div class="row">
+                        <div class="col-md-12">
+                          <p class="float-left">
+                            Copyright © 2021 <span>abc.com</span> All rights
+                            reserved.
+                          </p>
+                          <div class="float-right">
+                            <a href="#">News</a>
+                            <a href="#">Terms & Conditions</a>
+                            <a href="#"> Privacy Policy</a>
+                            <a href="#"> Career</a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </section>
+            </section>
+    </footer>
+    <!-- js_link -->
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+    <script src="js/common.js"></script>
+    <script>
+        //-----JS for Price Range slider-----
+
+$(function() {
+	$( "#slider-range" ).slider({
+	  range: true,
+	  min: 130,
+	  max: 500,
+	  values: [ 130, 250 ],
+	  slide: function( event, ui ) {
+		$( "#amount" ).val( "$" + ui.values[ 0 ] + " - $" + ui.values[ 1 ] );
+	  }
+	});
+	$( "#amount" ).val( "$" + $( "#slider-range" ).slider( "values", 0 ) +
+	  " - $" + $( "#slider-range" ).slider( "values", 1 ) );
+});
+    </script>
+</body>
+
+</html>

@@ -98,3 +98,35 @@
 }
 
 
+#pageBanner {
+    .pageBannerInner{
+        height: 300px;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        text-align: center;
+        color: #fff;
+        background: rgba(50,50,50,0.40);
+        h1{
+            font-size: 3em;
+        }
+        h2{
+            @include responsive(phone){
+                font-size: 1.7em;       
+    margin-bottom: 0;
+            }
+        }
+    }
+}
+.breadcrumb {
+    background-color: transparent;
+    text-align: center;
+    justify-content: center;
+    margin-bottom: 0;
+    .breadcrumb-item{
+        font-size: 1.1em;
+        &.active {
+            color: #949494;
+        }
+    }
+}

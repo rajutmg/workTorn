@@ -115,3 +115,65 @@ $(document).ready(function(){
   });
 
 })(jQuery); // End of use strict
+
+
+
+// view more detail Paragraph
+jQuery(function ($) {
+  var text = $('.detailText'),
+    btn = $('.view_btn-overflow'),
+    h = text[0].scrollHeight;
+    // var showChar = 400;
+    // $(".detailText").each(function() {
+    //   var content = $(this).html();
+    //   console.log(content.length);
+    // });
+  if (h > 240) {
+    btn.addClass('less');
+    btn.css('display', 'block');
+    text.css('height', '240px');
+    $('.detailTextCov').css('marginBottom', '0');
+  }
+
+  btn.click(function (e) {
+    e.stopPropagation();
+    if (btn.hasClass('less')) {
+      btn.removeClass('less');
+      btn.addClass('more');
+      btn.text('View Less');
+      $('.view_viewHolder').addClass('hide');
+
+      text.animate({ height: h });
+    } else {
+      btn.addClass('less');
+      btn.removeClass('more');
+      btn.text('View More');
+      text.animate({ height: '240px' });
+      $('.view_viewHolder').removeClass('hide');
+    }
+  });
+});
+
+
+// counter 
+document.addEventListener("DOMContentLoaded", () => {
+  function counter(id, start, end, duration) {
+   let obj = document.getElementById(id),
+    current = start,
+    range = end - start,
+    increment = end > start ? 1 : -1,
+    step = Math.abs(Math.floor(duration / range)),
+    timer = setInterval(() => {
+     current += increment;
+     obj.textContent = current;
+     if (current == end) {
+      clearInterval(timer);
+     }
+    }, step);
+  }
+  counter("count1", 0, 3, 4000);
+  counter("count2", 300, 1503, 5000);
+  counter("count3", 0, 2, 4000);
+  counter("count4", 0, 25, 4000);
+ });
+ 
