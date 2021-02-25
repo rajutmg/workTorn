@@ -2365,8 +2365,33 @@ input.ui-slider-input {
   margin-bottom: 30px;
 }
 
+#detailMain .skill .select1 {
+  display: inline-block;
+  width: 100%;
+}
+
 #detailMain .skill .progress-bar {
   background-color: #00cc8d;
+}
+
+#detailMain .skill .form-control {
+  font-size: 0.95em;
+  padding: 10px 15px;
+}
+
+#detailMain .skill .selectOne select {
+  padding: 0px 15px;
+}
+
+#detailMain .skill ul {
+  padding-left: 0;
+  margin-bottom: 0;
+  margin-top: -10px;
+}
+
+#detailMain .skill ul li {
+  list-style: none;
+  line-height: 2.4;
 }
 
 #detailMain .CraftProject {
@@ -2381,8 +2406,18 @@ input.ui-slider-input {
   padding: 0 15px;
 }
 
+#detailMain .craftedPadding .skillTitle {
+  padding: 15px;
+  border-bottom: 0;
+  margin-bottom: 0;
+}
+
+#detailMain .craftedPadding .skillTitle h2 {
+  font-size: 1.35em;
+}
+
 #detailMain .craftprojecttitle {
-  padding: 26px 30px;
+  padding: 25px 15px;
   width: 100%;
 }
 
@@ -2443,7 +2478,9 @@ input.ui-slider-input {
 }
 
 #detailMain .skillTitle {
-  padding-bottom: 15px;
+  padding-bottom: 5px;
+  border-bottom: 1px solid #ddd;
+  margin-bottom: 25px;
 }
 
 #detailMain .skillTitle h2 {
@@ -2487,8 +2524,14 @@ input.ui-slider-input {
   vertical-align: middle;
 }
 
+#detailMain .certificate {
+  display: inline-block;
+  width: 100%;
+}
+
 #detailMain .certificateImage {
-  width: auto;
+  width: 50px;
+  height: 50px;
   float: left;
   border-radius: 4px;
 }
@@ -2509,6 +2552,7 @@ input.ui-slider-input {
   font-weight: 400;
   color: #323232;
   margin-bottom: 3px;
+  margin-top: 2px;
 }
 
 #detailMain .certificateTitle h3 {
@@ -2516,7 +2560,7 @@ input.ui-slider-input {
   display: block;
   color: #999;
   padding: 2px 0 0;
-  font: 400 12px/23px 'Open Sans', Arial, Helvetica, sans-serif;
+  margin-top: 12px;
 }
 
 #detailMain .qrCodeImage {
@@ -2566,52 +2610,43 @@ input.ui-slider-input {
   border-radius: 20px;
   color: #767676;
   text-align: center;
-  font-size: 14px;
-  margin: 5px 0;
+  font-size: 13px;
+  padding: 7px 14px;
+  margin-bottom: 10px;
+  margin-right: 5px;
 }
 
 #detailMain .button:hover {
+  border: 1px solid #ff5851;
   background: #ff5851;
   color: white;
-  border: none;
-}
-
-#detailMain .links {
-  padding-bottom: 20px;
 }
 
 #detailMain .links a {
   color: #767676;
   text-decoration: none;
+  font-size: 13.5px;
 }
 
-#detailMain .links h2 {
-  font-size: 14px;
-  font: 400 14px/23px 'Open Sans', Arial, Helvetica, sans-serif;
+#detailMain .links i {
+  font-size: 18px;
+  margin-right: 10px;
 }
 
 #detailMain .fa-facebook-square {
   color: #3b5999;
-  font-size: 18px;
-  width: 30px;
 }
 
 #detailMain .fa-twitter {
   color: #55acee;
-  font-size: 18px;
-  width: 30px;
 }
 
 #detailMain .fa-linkedin {
   color: #0077B5;
-  font-size: 18px;
-  width: 30px;
 }
 
 #detailMain .fa-google-plus-g {
   color: #dd4b39;
-  font-size: 18px;
-  width: 30px;
 }
 
 #detailMain .link1 a:hover {
@@ -2638,17 +2673,9 @@ input.ui-slider-input {
   margin-top: 10px;
 }
 
-#detailMain .form {
-  display: block;
-  width: 100%;
-  border: 1px solid #ced4da;
-  border-radius: 4px;
-  transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
-}
-
 #detailMain .submitButton {
   display: inline-block;
-  margin-top: 10px;
+  margin-top: 15px;
   width: 100%;
 }
 
@@ -2694,6 +2721,10 @@ input.ui-slider-input {
   background-image: none;
   -ms-word-break: normal;
   word-break: normal;
+}
+
+textarea {
+  resize: inherit;
 }
 
 .footer {
