@@ -2236,6 +2236,7 @@ input.ui-slider-input {
   font-size: 16px;
   font-weight: 400;
   line-height: 16px;
+  color: #333;
 }
 
 #detailMain .companies {
@@ -2439,6 +2440,7 @@ input.ui-slider-input {
 #detailMain .project {
   padding: 0 15px;
   margin-bottom: 10px;
+  display: inline-block;
 }
 
 #detailMain .project figure {
@@ -2469,6 +2471,12 @@ input.ui-slider-input {
 #detailMain .e-content {
   width: 100%;
   padding: 30px;
+}
+
+@media only screen and (max-width: 600px) {
+  #detailMain .e-content {
+    text-align: center;
+  }
 }
 
 #detailMain .e-content .description p {
@@ -2725,6 +2733,10 @@ input.ui-slider-input {
 
 textarea {
   resize: inherit;
+}
+
+.edu {
+  padding: 0 15px;
 }
 
 .footer {
